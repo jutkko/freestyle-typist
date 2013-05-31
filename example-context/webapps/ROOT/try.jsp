@@ -1,6 +1,6 @@
 <HTML>
 <BODY>
-Hello!  The time is now <%= new java.util.Date() %>
+Hello!  The time is nows <%= new java.util.Date() %>
 </BODY>
 </HTML>
 

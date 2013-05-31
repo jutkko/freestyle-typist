@@ -9,6 +9,7 @@ Age: <%= user.getAge() %><BR>
 
 
 <%
+out.println("printing?");
         try {
  	    Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
