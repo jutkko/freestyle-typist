@@ -36,8 +36,9 @@ function check()
  document.getElementById("text").value = document.getElementById("text").innerHTML;
 var text =  document.getElementById("text").value;
 var answer =  document.getElementById("textbox").value;
-
-if(answer == "some text")
+alert(text);
+alert(answer);
+if(text == "some text")
 	{
 	document.write("correct");
         var time = new Date().getTime() - timer;
