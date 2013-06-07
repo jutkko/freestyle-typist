@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Nav -->
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top" 
+      style="margin-left: 0; margin-right: 0;">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li><a href="#home.html"    class="navlink"> Home </a></li>
+            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
+            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
+            <li><a href="#friends.html" class="navlink"> Friends </a></li>
+            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+<div data-role="page" id="page1">
+
+  <div data-role="content">
+    <a class="pull-right" href="#defaultpanel" data-role="button" data-inline="true" data-icon="bars" data-iconpos="notext"></a>
+
+    <a class="pull-right" href="#friendspanel" data-role="button" data-inline="true" data-icon="search" data-iconpos="notext"></a>
+
+    <a class="pull-right" href="#notificationpanel" data-role="button" data-inline="true" data-icon="alert" data-iconpos="notext"></a>
+
+        <!-- Home -->
+    <div id="content" class="wrapper wrapper-style1 wrapper-first" ></div>
+  </div>
+ 
+  <!-- defaultpanel  -->
+    <div data-role="panel" id="defaultpanel" data-position="right" data-display="overlay" data-theme="c">
+ 
+ <!-- Stuff in default panel -->
+      <div class="ui-panel-inner">
+        <div data-role="listview">
+            <li><a href="#home.html"    class="navlink"> Home </a></li>
+            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
+            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
+            <li><a href="#friends.html" class="navlink"> Friends </a></li>
+            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+        </div>
+        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+      </div><!-- /content wrapper for padding -->
+ 
+    </div><!-- /defaultpanel -->
+
+      <!-- friendstpanel  -->
+    <div data-role="panel" id="friendspanel" data-position="right" data-display="overlay" data-theme="c">
+ 
+ <!-- Stuff in friends panel -->
+      <div class="ui-panel-inner">
+        <div data-role="listview">
+            <li><a href="#home.html"    class="navlink"> Home </a></li>
+            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
+            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
+            <li><a href="#friends.html" class="navlink"> Friends </a></li>
+            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+        </div>
+        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+      </div><!-- /content wrapper for padding -->
+ 
+    </div><!-- /friendspanel -->
+
+  <!-- notificationpanel  -->
+    <div data-role="panel" id="notificationpanel" data-position="right" data-display="overlay" data-theme="c">
+ 
+ <!-- Stuff in notification panel -->
+      <div class="ui-panel-inner">
+        <div data-role="listview">
+            <li><a href="#home.html"    class="navlink"> Home </a></li>
+            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
+            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
+            <li><a href="#friends.html" class="navlink"> Friends </a></li>
+            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+        </div>
+        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+      </div><!-- /content wrapper for padding -->
+ 
+    </div><!-- /notificationpanel -->
+
+</div>
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+  </body>
+</html>
