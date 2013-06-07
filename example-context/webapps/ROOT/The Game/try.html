@@ -1,47 +1,41 @@
 <html>
 <head>
 
-<h1>My First JavaScript</h1>
-<!--
-<script>
-var text = 'some text';
-</script>
--->
-
-
 <p id="demo"> some text </p>
 
 <input id="textbox" type="text" disabled="disabled">
 
 <script>
-var timer;
 
-function change(button)
-{
-if(button.value == "Start!")
-	{
-	button.value = "Submit!"
-	timer = new Date().getTime();
-	document.getElementById("textbox").disabled = false;
-	}
-else
-	{
-	check();
-	}
-}
+	var timer;
 
-function check()
-{
-var text = "some text";
-var answer = document.getElementById("textbox").value;
-	
-if(answer == text)
+	function change(button)
 	{
-	document.write("correct");
-        var time = new Date().getTime() - timer;
-	document.write(time/1000 + "seconds");
+		if(button.value == "Start!")
+		{
+			button.value = "Submit!"
+			timer = new Date().getTime();
+			document.getElementById("textbox").disabled = false;
+		}
+		else
+		{
+			check();
+		}
 	}
-}
+
+	function check()
+	{
+		var text = "some text";
+		var answer = document.getElementById("textbox").value;
+		
+		if(answer == text)
+		{
+			document.write("correct");
+	    var time = new Date().getTime() - timer;
+			document.write(time/1000 + "seconds");
+		}
+	}
+
 </script>
 
 <input type='button' id="button" onclick="change(this)" value="Start!"> 
