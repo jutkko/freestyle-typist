@@ -9,43 +9,30 @@
 
 
 
+
   </head>
 
   <body>
 
-    <!-- Nav -->
-    <!-- <div class="navbar navbar-inverse navbar-fixed-top" 
-      style="margin-left: 0; margin-right: 0;">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <ul class="nav">
-            <li><a href="#home.html"    class="navlink"> Home </a></li>
-            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
-            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
-            <li><a href="#friends.html" class="navlink"> Friends </a></li>
-            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-
 <div data-role="page" id="page1">
 
   <div data-role="content">
+
+    <!-- Panels -->
     <a class="pull-right" href="#defaultpanel" data-role="button" data-inline="true" data-icon="bars" data-iconpos="notext"></a>
 
     <a class="pull-right" href="#friendspanel" data-role="button" data-inline="true" data-icon="search" data-iconpos="notext"></a>
 
     <a class="pull-right" href="#notificationpanel" data-role="button" data-inline="true" data-icon="alert" data-iconpos="notext"></a>
 
-        <!-- Home -->
+    <!-- Home -->
     <div id="content" class="wrapper wrapper-style1 wrapper-first" ></div>
   </div>
  
-  <!-- defaultpanel  -->
+    <!-- defaultpanel  -->
     <div data-role="panel" id="defaultpanel" data-position="right" data-display="overlay" data-theme="c">
  
- <!-- Stuff in default panel -->
+      <!-- Stuff in default panel -->
       <div class="ui-panel-inner">
         <div data-role="listview">
             <li><a href="#home.html"    class="navlink"> Home </a></li>
@@ -54,41 +41,61 @@
             <li><a href="#friends.html" class="navlink"> Friends </a></li>
             <li><a href="#logout.html"  class="navlink"> Logout </a></li>
         </div>
-        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
       </div><!-- /content wrapper for padding -->
  
     </div><!-- /defaultpanel -->
 
-      <!-- friendstpanel  -->
+    <!-- friendstpanel  -->
     <div data-role="panel" id="friendspanel" data-position="right" data-display="overlay" data-theme="c">
  
- <!-- Stuff in friends panel -->
+      <!-- Stuff in friends panel -->
       <div class="ui-panel-inner">
+
         <div data-role="listview">
-            <li><a href="#home.html"    class="navlink"> Home </a></li>
-            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
-            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
-            <li><a href="#friends.html" class="navlink"> Friends </a></li>
-            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+          <li data-role="list-divider"> Friends </li>
+            <fieldset data-role="controlgroup">
+              <div class="ui-btn-inner">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" data-iconpos="right">
+                <label for="checkbox-1"> Felix </label>
+            
+                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" data-iconpos="right">
+                <label for="checkbox-2"> Jo </label>
+
+                <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="grid" data-iconpos="right"> Challenge </a>
+              </div>
+            </fieldset>
         </div>
-        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
       </div><!-- /content wrapper for padding -->
  
     </div><!-- /friendspanel -->
 
-  <!-- notificationpanel  -->
+    <!-- notificationpanel  -->
     <div data-role="panel" id="notificationpanel" data-position="right" data-display="overlay" data-theme="c">
  
- <!-- Stuff in notification panel -->
+    <!-- Stuff in notification panel -->
       <div class="ui-panel-inner">
         <div data-role="listview">
-            <li><a href="#home.html"    class="navlink"> Home </a></li>
-            <li><a href="#stats.html"   class="navlink"> Stats </a></li>
-            <li><a href="#rankings.html"class="navlink"> Rankings </a></li>
-            <li><a href="#friends.html" class="navlink"> Friends </a></li>
-            <li><a href="#logout.html"  class="navlink"> Logout </a></li>
+          <li data-role="list-divider"> Friend requests </li>
+            <fieldset data-role="controlgroup">
+              <div class="ui-btn-inner">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" data-iconpos="right">
+                <label for="checkbox-1"> Felix </label>
+            
+                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" data-iconpos="right">
+                <label for="checkbox-2"> Jo </label>
+
+                <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="check"> Accept </a>
+              </div>
+            </fieldset>
+
+          <li data-role="list-divider"> Challenges completed</li>
+            <li> Felix </li>
+
+          <li data-role="list-divider"> Requests sent </li>
+            <li> Felix </li>
+
+
         </div>
-        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
       </div><!-- /content wrapper for padding -->
  
     </div><!-- /notificationpanel -->

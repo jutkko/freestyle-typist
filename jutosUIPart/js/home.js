@@ -59,8 +59,11 @@ $(document).ready(function()
       resultMessage.text("Congratulations, you have just finished a game of our WebApp! Here is some data:");
       var time = new Date().getTime() - timer;
       var table = document.getElementById('resultTable');
+      // Time
       table.rows[0].cells[1].innerHTML = time / 1000 + "seconds";
+      // Speed
       table.rows[1].cells[1].innerHTML = "0";
+      // Accuracy
       table.rows[2].cells[1].innerHTML = "0"+ "%";
     } else
     {

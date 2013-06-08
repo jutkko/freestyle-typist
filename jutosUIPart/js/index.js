@@ -16,6 +16,7 @@ $(document).ready(function()
     var linkhtmlurl = linkurl.substring(1, linkurl.length);
 
     content.html(imgloader);
+    $("#defaultpanel").panel("close");
 
     setTimeout(function() 
     { content.load(linkhtmlurl, function() 
