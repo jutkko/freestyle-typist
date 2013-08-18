@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	    <title>Test</title>
+
+  
+	</head>
+	<body>
+	<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websockets rely on Javascript being enabled. Please enable
+	    Javascript and reload this page!</h2></noscript>
+	<div>
+	    <p>
+	    <button type="button" id = "test" >Click Me!</button>
+	        
+	    </p>
+	    
+	</div>
+	
+	<p id = "here"> </p>
+	<button type="button" id = "Test2" >Click Me2!</button>
+	<p id = "here2"> </p>
+    <script type="text/javascript">
+//     function myFunction() {
+//       	document.getElementById("here").innerHTML = "Yes!";
+//     }
+	document.getElementById("Test2").onclick = function(){document.getElementById("here2").innerHTML = "Ahh";};
+    		var Test = {};
+
+	        Test.socket = null;
+
+	        Test.connect = (function(host) {
+	            if ('WebSocket' in window) {
+                Test.socket = new WebSocket(host);
+	            } else if ('MozWebSocket' in window) {
+	                Test.socket = new MozWebSocket(host);
+	            } else {
+	                               return;
+            }
+	
+            Test.socket.onopen = function () {
+	                
+	                document.getElementById('test').onclick = function(event) {
+	                    
+	                        Test.sendMessage();
+	                    
+                };
+	            };
+	
+	            Test.socket.onclose = function () {
+	                document.getElementById('test').onclick = null;
+                 };
+	
+	            Test.socket.onmessage = function (message) {
+	                document.getElementById('here').innerHTML = "Yes!";
+	            };
+	        });
+	
+	       
+	        
+        Test.initialize = function() {
+	            if (window.location.protocol == 'http:') {
+	                Test.connect('ws://' + 'localhost:8081' + '/FTT/test');
+	            } else {
+	                Test.connect('wss://' + 'localhost:8081' + '/FTT/test');
+	            }
+	        };
+	
+	        Test.sendMessage = (function() {
+	            
+	                Test.socket.send('');
+	                	            
+	        });
+	
+	       
+	        Test.initialize();
+	
+  </script>
+	</body>
+	</html>
